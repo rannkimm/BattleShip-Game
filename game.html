@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>BattleShip Game</title>
+</head>
+<body>
+    <h1>Let's Play</h1>
+    <h2>BATTLESHIP</h2>
+    <p>All of your opponent's ships are hiding. Take your shot by clicking on a cell in the grid. The cell will turn red if it is a hit and black black if it is a miss. Find all 20 hits within 35 turns.</p>
+    <section class="track">
+        <div class="count">
+            <p class="shot">Shots Left</p>
+            <p class="shotcount">0</p>
+        </div>
+        <div class="score">
+            <p class="hit">HIT</p>
+            <p class="miss">MISS</p>
+            <p class="hitcount">0</p>
+            <p class="misscount">0</p>
+        </div>
+    </section>
+   
+    <div class="board">
+        <div class="cell" id="sq1"></div>
+        <div class="cell" id="sq2"></div>
+        <div class="cell" id="sq3"></div>
+        <div class="cell" id="sq4"></div>
+        <div class="cell" id="sq5"></div>
+        <div class="cell" id="sq6"></div>
+        <div class="cell" id="sq7"></div>
+        <div class="cell" id="sq8"></div>
+        <div class="cell" id="sq9"></div>
+        <div class="cell" id="sq10"></div>
+        <div class="cell" id="sq11"></div>
+        <div class="cell" id="sq12"></div>
+        <div class="cell" id="sq13"></div>
+        <div class="cell" id="sq14"></div>
+        <div class="cell" id="sq15"></div>
+        <div class="cell" id="sq16"></div>
+        <div class="cell" id="sq17"></div>
+        <div class="cell" id="sq18"></div>
+        <div class="cell" id="sq19"></div>
+        <div class="cell" id="sq20"></div>
+        <div class="cell" id="sq21"></div>
+        <div class="cell" id="sq22"></div>
+        <div class="cell" id="sq23"></div>
+        <div class="cell" id="sq24"></div>
+        <div class="cell" id="sq25"></div>
+        <div class="cell" id="sq26"></div>
+        <div class="cell" id="sq27"></div>
+        <div class="cell" id="sq28"></div>
+        <div class="cell" id="sq29"></div>
+        <div class="cell" id="sq30"></div>
+        <div class="cell" id="sq31"></div>
+        <div class="cell" id="sq32"></div>
+        <div class="cell" id="sq33"></div>
+        <div class="cell" id="sq34"></div>
+        <div class="cell" id="sq35"></div>
+        <div class="cell" id="sq36"></div>
+        <div class="cell" id="sq37"></div>
+        <div class="cell" id="sq38"></div>
+        <div class="cell" id="sq39"></div>
+        <div class="cell" id="sq40"></div>
+        <div class="cell" id="sq41"></div>
+        <div class="cell" id="sq42"></div>
+        <div class="cell" id="sq43"></div>
+        <div class="cell" id="sq44"></div>
+        <div class="cell" id="sq45"></div>
+        <div class="cell" id="sq46"></div>
+        <div class="cell" id="sq47"></div>
+        <div class="cell" id="sq48"></div>
+        <div class="cell" id="sq49"></div>
+        <div class="cell" id="sq50"></div>
+        <div class="cell" id="sq51"></div>
+        <div class="cell" id="sq52"></div>
+        <div class="cell" id="sq53"></div>
+        <div class="cell" id="sq54"></div>
+        <div class="cell" id="sq55"></div>
+        <div class="cell" id="sq56"></div>
+        <div class="cell" id="sq57"></div>
+        <div class="cell" id="sq58"></div>
+        <div class="cell" id="sq59"></div>
+        <div class="cell" id="sq60"></div>
+        <div class="cell" id="sq61"></div>
+        <div class="cell" id="sq62"></div>
+        <div class="cell" id="sq63"></div>
+        <div class="cell" id="sq64"></div>
+        <div class="cell" id="sq65"></div>
+        <div class="cell" id="sq66"></div>
+        <div class="cell" id="sq67"></div>
+        <div class="cell" id="sq68"></div>
+        <div class="cell" id="sq69"></div>
+        <div class="cell" id="sq70"></div>
+        <div class="cell" id="sq71"></div>
+        <div class="cell" id="sq72"></div>
+        <div class="cell" id="sq73"></div>
+        <div class="cell" id="sq74"></div>
+        <div class="cell" id="sq75"></div>
+        <div class="cell" id="sq76"></div>
+        <div class="cell" id="sq77"></div>
+        <div class="cell" id="sq78"></div>
+        <div class="cell" id="sq79"></div>
+        <div class="cell" id="sq80"></div>
+        <div class="cell" id="sq81"></div>
+        <div class="cell" id="sq82"></div>
+        <div class="cell" id="sq83"></div>
+        <div class="cell" id="sq84"></div>
+        <div class="cell" id="sq85"></div>
+        <div class="cell" id="sq86"></div>
+        <div class="cell" id="sq87"></div>
+        <div class="cell" id="sq88"></div>
+        <div class="cell" id="sq89"></div>
+        <div class="cell" id="sq90"></div>
+        <div class="cell" id="sq91"></div>
+        <div class="cell" id="sq92"></div>
+        <div class="cell" id="sq93"></div>
+        <div class="cell" id="sq94"></div>
+        <div class="cell" id="sq95"></div>
+        <div class="cell" id="sq96"></div>
+        <div class="cell" id="sq97"></div>
+        <div class="cell" id="sq98"></div>
+        <div class="cell" id="sq99"></div>
+        <div class="cell" id="sq100"></div>
+        <div class="cell" id="sq101"></div>
+        <div class="cell" id="sq102"></div>
+        <div class="cell" id="sq103"></div>
+        <div class="cell" id="sq104"></div>
+        <div class="cell" id="sq105"></div>
+        <div class="cell" id="sq106"></div>
+        <div class="cell" id="sq107"></div>
+        <div class="cell" id="sq108"></div>
+        <div class="cell" id="sq109"></div>
+        <div class="cell" id="sq110"></div>
+        <div class="cell" id="sq111"></div>
+        <div class="cell" id="sq112"></div>
+        <div class="cell" id="sq113"></div>
+        <div class="cell" id="sq114"></div>
+        <div class="cell" id="sq115"></div>
+        <div class="cell" id="sq116"></div>
+        <div class="cell" id="sq117"></div>
+        <div class="cell" id="sq118"></div>
+        <div class="cell" id="sq119"></div>
+        <div class="cell" id="sq120"></div>
+        <div class="cell" id="sq121"></div>
+
+    </div>
+
+</body>
+</html>
