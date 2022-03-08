@@ -1,46 +1,59 @@
 ///////// GLOBAL VARIABLES /////////
 let board = document.querySelector('.board')
-let box = document.querySelectorAll('.cell')
+let boxes = document.querySelectorAll('.cell')
 
-console.log(box)
-console.log(box.dataset.cell)
-// console.log(box.dataset.cell)
+start = () => {
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].addEventListener('click', () => {
+            if (boxes[i].dataset.cell === 'hit') {
+                console.log('hit')
+            } else {
+                console.log('miss')
+            }
+        }, {once: true})
+    }
+}
 
-
-// start = () => {
-//     for (let i = 0; i < box.length; i++) {
-//         box[i].addEventListener('click', () => {
-//             // if (cell.dataset.square === sq1) {
-//             //     console.log('miss')
-//             // } else {
-//             //     console.log('hit')
-//             // }
-//         }, {once: true})
-//     }
-// }
+start()
 
 
 
 
-let cellValue = [
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,0,
-]
 
-let destroyer = 'hit'
-let submarine = 'hit'
-let cruiser = 'hit'
-let battleship = 'hit'
-let carrier = 'hit'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let cellValue = [
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+//     0,0,0,0,0,0,0,0,0,0,0,
+// ]
+
+// let destroyer = 'hit'
+// let submarine = 'hit'
+// let cruiser = 'hit'
+// let battleship = 'hit'
+// let carrier = 'hit'
 
 // createBoard = () => {
     
