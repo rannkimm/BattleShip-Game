@@ -32,7 +32,18 @@ createBoard = () => {
         cell.innerHTML = cellValue
     }
     setValue()
-
+    start = () => {
+        for (let i = 0; i < cell.length; i++) {
+            cell[i].addEventListener('click', () => {
+                if (cell[i] === 0) {
+                    console.log('miss')
+                } else {
+                    console.log('hit')
+                }
+            }, {once: true})
+        }
+    }
+}
     
 
 
