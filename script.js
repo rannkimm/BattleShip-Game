@@ -1,14 +1,17 @@
 ///////// GLOBAL VARIABLES /////////
 let board = document.querySelector('.board')
 let boxes = document.querySelectorAll('.cell')
+let hitCount = document.querySelector(".hitcount")
+
 
 start = () => {
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].addEventListener('click', () => {
             if (boxes[i].dataset.cell === 'hit') {
-                console.log('hit')
+                boxes[i].innerHTML = 'x'
+                boxes[i].style.backgroundColor = 'red'
             } else {
-                console.log('miss')
+                boxes[i].style.backgroundColor = 'black'
             }
         }, {once: true})
     }
