@@ -1,6 +1,26 @@
 ///////// GLOBAL VARIABLES /////////
 let board = document.querySelector('.board')
-let cell = document.querySelectorAll('.cell')
+let box = document.querySelectorAll('.cell')
+
+console.log(box)
+console.log(box.dataset.cell)
+// console.log(box.dataset.cell)
+
+
+// start = () => {
+//     for (let i = 0; i < box.length; i++) {
+//         box[i].addEventListener('click', () => {
+//             // if (cell.dataset.square === sq1) {
+//             //     console.log('miss')
+//             // } else {
+//             //     console.log('hit')
+//             // }
+//         }, {once: true})
+//     }
+// }
+
+
+
 
 let cellValue = [
     0,0,0,0,0,0,0,0,0,0,0,
@@ -16,39 +36,43 @@ let cellValue = [
     0,0,0,0,0,0,0,0,0,0,0,
 ]
 
-let destroyer = ['d', 'd']
-let submarine = ['s', 's', 's']
-let cruiser = ['c', 'c', 'c', 'c']
-let battleship = ['b', 'b', 'b', 'b', 'b']
-let carrier = ['a', 'a', 'a', 'a', 'a', 'a']
+let destroyer = 'hit'
+let submarine = 'hit'
+let cruiser = 'hit'
+let battleship = 'hit'
+let carrier = 'hit'
 
-createBoard = () => {
-    cellValue.splice(1, 2, destroyer[0], destroyer[1])
-    cellValue.splice(25, 3, submarine[0], submarine[1], submarine[2],)
-    cellValue.splice(66, 4, cruiser[0], cruiser[1], cruiser[2], cruiser[3])
-    cellValue.splice(92, 5, battleship[0], battleship[1], battleship[2], battleship[3], battleship[4])
-    cellValue.splice(48, 6, carrier[0], carrier[1], carrier[2], carrier[3], carrier[4], carrier[5])
-    setValue = () => {
-        cell.innerHTML = cellValue
-    }
-    setValue()
-    start = () => {
-        for (let i = 0; i < cell.length; i++) {
-            cell[i].addEventListener('click', () => {
-                if (cell[i] === 0) {
-                    console.log('miss')
-                } else {
-                    console.log('hit')
-                }
-            }, {once: true})
-        }
-    }
-}
+// createBoard = () => {
+    
+    // cellValue.splice(1, 2, destroyer, destroyer)
+    // cellValue.splice(25, 3, submarine, submarine, submarine,)
+    // cellValue.splice(66, 4, cruiser, cruiser, cruiser, cruiser)
+    // cellValue.splice(92, 5, battleship, battleship, battleship, battleship, battleship)
+    // cellValue.splice(48, 6, carrier, carrier, carrier, carrier, carrier, carrier)
+    // setValue = () => {
+    //     cell.innerHTML = cellValue
+    // }
+    // setValue()
+
+// }
+
+
+
+// start = () => {
+//     for (let i = 0; i < cell.length; i++) {
+//         cell[i].addEventListener('click', () => {
+//             // if (cell[i].innerHTML === 0) {
+//             //     console.log('miss')
+//             // } else {
+//             //     console.log('hit')
+//             // }
+//         }, {once: true})
+//     }
+// }
+
     
 
+// createBoard()
 
-
-
-
-createBoard()
-start()
+// console.log(cell.innerHTML)
+// start()
