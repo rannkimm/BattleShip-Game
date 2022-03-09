@@ -23,6 +23,16 @@ init = () => {
     hitCount.innerHTML = '0'
     missCount.innerHTML = '0'
     shotCount.innerHTML = '50'
+    dCounter = 0
+    sCounter = 0
+    cCounter = 0
+    bCounter = 0
+    aCounter = 0
+    console.log('d', dCounter)
+    console.log('s', sCounter)
+    console.log('b', bCounter)
+    console.log('a', aCounter)
+    console.log('c', cCounter)
     document.querySelector('.message').innerHTML = ''
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].style.backgroundColor = 'white'
@@ -44,6 +54,11 @@ winCondition = () => {
     }
 } 
 
+// restartButton = () => {
+//     restart.addEventListener('click', () => {
+//         startGame()
+//     })
+// }
 
 startGame = () => {
     init()
@@ -55,6 +70,7 @@ startGame = () => {
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
                 dCounter += 1
+                console.log('d', dCounter)
                 if (dCounter === 2) {
                     document.querySelector('.message').innerHTML = 'You sunk the DESTROYER!'
                 }
@@ -65,6 +81,7 @@ startGame = () => {
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
                 sCounter += 1
+                console.log('s', sCounter)
                 if (sCounter === 3) {
                     document.querySelector('.message').innerHTML = 'You sunk the SUBMARINE!'
                 }
@@ -75,6 +92,7 @@ startGame = () => {
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
                 cCounter += 1
+                console.log('c', cCounter)
                 if (cCounter === 4) {
                     document.querySelector('.message').innerHTML = 'You sunk the CRUISER!'
                 }
@@ -85,6 +103,7 @@ startGame = () => {
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
                 bCounter += 1
+                console.log('b', bCounter)
                 if (bCounter === 5) {
                     document.querySelector('.message').innerHTML = 'You sunk the BATTLESHIP!'
                 }
@@ -95,6 +114,7 @@ startGame = () => {
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
                 aCounter += 1
+                console.log('a', aCounter)
                 if (aCounter === 6) {
                     document.querySelector('.message').innerHTML = 'You sunk the CARRIER!'
                 }
@@ -116,79 +136,10 @@ startGame = () => {
         //     })
         // }
     }
-    restart.addEventListener('click', () => {
-        startGame()
-    })
+  
 }
 
 startGame()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let cellValue = [
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-//     0,0,0,0,0,0,0,0,0,0,0,
-// ]
-
-
-
-// createBoard = () => {
-    
-    // cellValue.splice(1, 2, destroyer, destroyer)
-    // cellValue.splice(25, 3, submarine, submarine, submarine,)
-    // cellValue.splice(66, 4, cruiser, cruiser, cruiser, cruiser)
-    // cellValue.splice(92, 5, battleship, battleship, battleship, battleship, battleship)
-    // cellValue.splice(48, 6, carrier, carrier, carrier, carrier, carrier, carrier)
-    // setValue = () => {
-    //     cell.innerHTML = cellValue
-    // }
-    // setValue()
-
-// }
-
-
-
-// start = () => {
-//     for (let i = 0; i < cell.length; i++) {
-//         cell[i].addEventListener('click', () => {
-//             // if (cell[i].innerHTML === 0) {
-//             //     console.log('miss')
-//             // } else {
-//             //     console.log('hit')
-//             // }
-//         }, {once: true})
-//     }
-// }
-
-    
-
-// createBoard()
-
-// console.log(cell.innerHTML)
-// start()
