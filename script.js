@@ -4,6 +4,17 @@ let boxes = document.querySelectorAll('.cell')
 let hitCount = document.querySelector('.hitcount')
 let missCount = document.querySelector('.misscount')
 let shotCount = document.querySelector('.shotcount')
+let dCounter = 0
+let sCounter = 0
+let cCounter = 0
+let bCounter = 0
+let aCounter = 0
+
+let destroyer = 'd'
+let submarine = 's'
+let cruiser = 'c'
+let battleship = 'b'
+let carrier = 'a'
 
 init = () => {
     hitCount.innerHTML = '0'
@@ -95,11 +106,7 @@ startGame()
 //     0,0,0,0,0,0,0,0,0,0,0,
 // ]
 
-// let destroyer = 'hit'
-// let submarine = 'hit'
-// let cruiser = 'hit'
-// let battleship = 'hit'
-// let carrier = 'hit'
+
 
 // createBoard = () => {
     
