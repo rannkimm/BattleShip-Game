@@ -1,5 +1,5 @@
 ///////// GLOBAL VARIABLES /////////
-let button = document.querySelector('.submit')
+let restart = document.querySelector('.restart')
 let board = document.querySelector('.board')
 let boxes = document.querySelectorAll('.cell')
 let hitCount = document.querySelector('.hitcount')
@@ -30,26 +30,16 @@ init = () => {
     }
 }
 
-reset = () => {
-    hitCount.innerHTML = '0'
-    missCount.innerHTML = '0'
-    shotCount.innerHTML = '50'
-    for (let i = 0; i < boxes.length; i++) {
-        boxes[i].style.backgroundColor = 'white'
-        boxes[i].innerHTML = ''
-    }
-}
-
 winCondition = () => {
     if (hitCount.innerHTML === '20') {
-        prompt('You Win! Play again? Y/N')
-        if (prompt === 'Y') {
-           reset()
+        let winPrompt = prompt('You Win! Play again? Y/N')
+        if (winPrompt === 'Y') {
+           startGame()
         }
     } else if (shotCount.innerHTML === '0') {
-        prompt('You Lose! Play again? Y/N')
-        if (prompt === 'Y') {
-           reset()
+        let losePrompt = prompt('You Lose! Play again? Y/N')
+        if (losePrompt === 'Y') {
+           startGame()
         }
     }
 } 
@@ -58,8 +48,7 @@ winCondition = () => {
 startGame = () => {
     init()
     for (let i = 0; i < boxes.length; i++) {
-       
-        boxes[i].addEventListener('click', () => {
+        boxes[i].addEventListener('click',  () => {
             if (boxes[i].dataset.cell === 'd') {
                 boxes[i].innerHTML = 'x'
                 boxes[i].style.backgroundColor = 'red'
@@ -96,7 +85,7 @@ startGame = () => {
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
                 bCounter += 1
-                if (bCounter === 6) {
+                if (bCounter === 5) {
                     document.querySelector('.message').innerHTML = 'You sunk the BATTLESHIP!'
                 }
                 winCondition()
@@ -127,6 +116,9 @@ startGame = () => {
         //     })
         // }
     }
+    restart.addEventListener('click', () => {
+        init()
+    })
 }
 
 startGame()
