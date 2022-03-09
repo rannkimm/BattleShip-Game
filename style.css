@@ -19,6 +19,7 @@
 h1 {
     font-family: 'Black Ops One', cursive;
     font-size: 50pt;
+    color: rgb(79, 84, 114);
     text-shadow: 1px 1px 2px white;
     margin: 5px;
 }
