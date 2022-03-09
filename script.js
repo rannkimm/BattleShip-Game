@@ -5,17 +5,43 @@ let hitCount = document.querySelector('.hitcount')
 let missCount = document.querySelector('.misscount')
 let shotCount = document.querySelector('.shotcount')
 
+init = () => {
+    hitCount.innerHTML = '0'
+    missCount.innerHTML = '0'
+    shotCount.innerHTML = '50'
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = 'white'
+        boxes[i].innerHTML = ''
+    }
+}
+
+reset = () => {
+    hitCount.innerHTML = '0'
+    missCount.innerHTML = '0'
+    shotCount.innerHTML = '50'
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = 'white'
+        boxes[i].innerHTML = ''
+    }
+}
 
 winCondition = () => {
     if (hitCount.innerHTML === '20') {
-        console.log('win')
+        prompt('You Win! Play again? Y/N')
+        if (prompt === 'Y') {
+           reset()
+        }
     } else if (shotCount.innerHTML === '0') {
-        console.log('lose')
+        prompt('You Lose! Play again? Y/N')
+        if (prompt === 'Y') {
+           reset()
+        }
     }
 } 
 
 
 startGame = () => {
+    init()
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].addEventListener('click', () => {
             if (boxes[i].dataset.cell === 'hit') {
