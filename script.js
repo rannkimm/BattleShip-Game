@@ -1,7 +1,8 @@
 ///////// GLOBAL VARIABLES /////////
 let board = document.querySelector('.board')
 let boxes = document.querySelectorAll('.cell')
-let hitCount = document.querySelector(".hitcount")
+let hitCount = document.querySelector('.hitcount')
+let missCount = document.querySelector('.misscount')
 
 
 start = () => {
@@ -10,8 +11,10 @@ start = () => {
             if (boxes[i].dataset.cell === 'hit') {
                 boxes[i].innerHTML = 'x'
                 boxes[i].style.backgroundColor = 'red'
+                hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
             } else {
                 boxes[i].style.backgroundColor = 'black'
+                missCount.innerHTML = parseInt(missCount.innerHTML) + 1
             }
         }, {once: true})
     }
