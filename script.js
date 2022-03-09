@@ -1,4 +1,5 @@
 ///////// GLOBAL VARIABLES /////////
+let button = document.querySelector('.submit')
 let board = document.querySelector('.board')
 let boxes = document.querySelectorAll('.cell')
 let hitCount = document.querySelector('.hitcount')
@@ -10,15 +11,13 @@ let cCounter = 0
 let bCounter = 0
 let aCounter = 0
 
-let destroyer = document.querySelector('.message').innerHTML = 'You sunk the DESTROYER!'
-let submarine = document.querySelector('.message').innerHTML = 'You sunk the SUBMARINE!'
-let cruiser = document.querySelector('.message').innerHTML = 'You sunk the CRUISER!'
-let battleship = document.querySelector('.message').innerHTML = 'You sunk the BATTLESHIP!'
-let carrier = document.querySelector('.message').innerHTML = 'You sunk the CARRIER!'
-let notAHit = document.querySelector('.message').innerHTML = 'You MISSED! Try Again!'
+// let destroyer = document.querySelector('.message').innerHTML = 'You sunk the DESTROYER!'
+// let submarine = document.querySelector('.message').innerHTML = 'You sunk the SUBMARINE!'
+// let cruiser = document.querySelector('.message').innerHTML = 'You sunk the CRUISER!'
+// let battleship = document.querySelector('.message').innerHTML = 'You sunk the BATTLESHIP!'
+// let carrier = document.querySelector('.message').innerHTML = 'You sunk the CARRIER!'
+// let notAHit = document.querySelector('.message').innerHTML = 'You MISSED! Try Again!'
 
-console.log(destroyer)
-console.log(submarine)
 
 init = () => {
     hitCount.innerHTML = '0'
@@ -59,6 +58,7 @@ winCondition = () => {
 startGame = () => {
     init()
     for (let i = 0; i < boxes.length; i++) {
+       
         boxes[i].addEventListener('click', () => {
             if (boxes[i].dataset.cell === 'd') {
                 boxes[i].innerHTML = 'x'
@@ -118,6 +118,14 @@ startGame = () => {
                 winCondition()
             }
         }, {once: true})
+        // if (boxes[i].innerHTML === '') {
+        //     boxes[i].addEventListener('mouseenter', ()=> {
+        //         boxes[i].innerHTML = 'x'
+        //     })
+        //     boxes[i].addEventListener('mouseleave', ()=> {
+        //         boxes[i].innerHTML = ''
+        //     })
+        }
     }
 }
 
