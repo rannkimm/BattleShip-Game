@@ -23,7 +23,7 @@ init = () => {
     hitCount.innerHTML = '0'
     missCount.innerHTML = '0'
     shotCount.innerHTML = '50'
-    // document.querySelector('.message').innerHTML = ''
+    document.querySelector('.message').innerHTML = ''
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].style.backgroundColor = 'white'
         boxes[i].innerHTML = ''
@@ -117,7 +117,7 @@ startGame = () => {
         // }
     }
     restart.addEventListener('click', () => {
-        init()
+        startGame()
     })
 }
 
