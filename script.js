@@ -125,7 +125,7 @@ startGame = () => {
         //     boxes[i].addEventListener('mouseleave', ()=> {
         //         boxes[i].innerHTML = ''
         //     })
-        }
+        // }
     }
 }
 
