@@ -10,16 +10,21 @@ let cCounter = 0
 let bCounter = 0
 let aCounter = 0
 
-let destroyer = 'd'
-let submarine = 's'
-let cruiser = 'c'
-let battleship = 'b'
-let carrier = 'a'
+let destroyer = document.querySelector('.message').innerHTML = 'You sunk the DESTROYER!'
+let submarine = document.querySelector('.message').innerHTML = 'You sunk the SUBMARINE!'
+let cruiser = document.querySelector('.message').innerHTML = 'You sunk the CRUISER!'
+let battleship = document.querySelector('.message').innerHTML = 'You sunk the BATTLESHIP!'
+let carrier = document.querySelector('.message').innerHTML = 'You sunk the CARRIER!'
+let notAHit = document.querySelector('.message').innerHTML = 'You MISSED! Try Again!'
+
+console.log(destroyer)
+console.log(submarine)
 
 init = () => {
     hitCount.innerHTML = '0'
     missCount.innerHTML = '0'
     shotCount.innerHTML = '50'
+    document.querySelector('.message').innerHTML = ''
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].style.backgroundColor = 'white'
         boxes[i].innerHTML = ''
@@ -55,16 +60,61 @@ startGame = () => {
     init()
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].addEventListener('click', () => {
-            if (boxes[i].dataset.cell === 'hit') {
+            if (boxes[i].dataset.cell === 'd') {
                 boxes[i].innerHTML = 'x'
                 boxes[i].style.backgroundColor = 'red'
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                dCounter += 1
+                if (dCounter === 2) {
+                    document.querySelector('.message').innerHTML = 'You sunk the DESTROYER!'
+                }
+                winCondition()
+            } else if (boxes[i].dataset.cell === 's') {
+                boxes[i].innerHTML = 'x'
+                boxes[i].style.backgroundColor = 'red'
+                hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
+                shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                sCounter += 1
+                if (sCounter === 3) {
+                    document.querySelector('.message').innerHTML = 'You sunk the SUBMARINE!'
+                }
+                winCondition()
+            } else if (boxes[i].dataset.cell === 'c') {
+                boxes[i].innerHTML = 'x'
+                boxes[i].style.backgroundColor = 'red'
+                hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
+                shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                cCounter += 1
+                if (cCounter === 4) {
+                    document.querySelector('.message').innerHTML = 'You sunk the CRUISER!'
+                }
+                winCondition()
+            } else if (boxes[i].dataset.cell === 'b') {
+                boxes[i].innerHTML = 'x'
+                boxes[i].style.backgroundColor = 'red'
+                hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
+                shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                bCounter += 1
+                if (bCounter === 6) {
+                    document.querySelector('.message').innerHTML = 'You sunk the BATTLESHIP!'
+                }
+                winCondition()
+            } else if (boxes[i].dataset.cell === 'a') {
+                boxes[i].innerHTML = 'x'
+                boxes[i].style.backgroundColor = 'red'
+                hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
+                shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                aCounter += 1
+                if (aCounter === 6) {
+                    document.querySelector('.message').innerHTML = 'You sunk the CARRIER!'
+                }
                 winCondition()
             } else {
                 boxes[i].style.backgroundColor = 'black'
                 missCount.innerHTML = parseInt(missCount.innerHTML) + 1
                 shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                document.querySelector('.message').innerHTML = ''
                 winCondition()
             }
         }, {once: true})
