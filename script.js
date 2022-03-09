@@ -3,24 +3,38 @@ let board = document.querySelector('.board')
 let boxes = document.querySelectorAll('.cell')
 let hitCount = document.querySelector('.hitcount')
 let missCount = document.querySelector('.misscount')
+let shotCount = document.querySelector('.shotcount')
 
 
-start = () => {
+winCondition = () => {
+    if (hitCount.innerHTML === '20') {
+        console.log('win')
+    } else if (shotCount.innerHTML === '0') {
+        console.log('lose')
+    }
+} 
+
+
+startGame = () => {
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].addEventListener('click', () => {
             if (boxes[i].dataset.cell === 'hit') {
                 boxes[i].innerHTML = 'x'
                 boxes[i].style.backgroundColor = 'red'
                 hitCount.innerHTML = parseInt(hitCount.innerHTML) + 1
+                shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                winCondition()
             } else {
                 boxes[i].style.backgroundColor = 'black'
                 missCount.innerHTML = parseInt(missCount.innerHTML) + 1
+                shotCount.innerHTML = parseInt(shotCount.innerHTML) - 1
+                winCondition()
             }
         }, {once: true})
     }
 }
 
-start()
+startGame()
 
 
 
