@@ -1,25 +1,95 @@
+
+
 body {
     text-align: center;
+    background-image: url(https://images3.alphacoders.com/282/thumb-1920-2829.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
+h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 50pt;
+    margin: 5px;
+}
+
+h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 70pt;
+    margin: 5px;
+}
+
 .track {
     display: flex;
+    height: 100px;
+    margin-bottom: 5px;
+
 }
 .count {
     margin: auto;
+    width: 200px;
+}
+.shot {
+    border-bottom: 6px solid black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.shotcount {
+    margin-top: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .score {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin:auto;
+    margin: auto;
+    width: 200px;
 }
 
+.hit {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 6px solid black;
+    margin-bottom: 5px;
+}
+
+.miss {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 6px solid black;
+    margin-bottom: 5px;
+}
+
+.hitcount {
+    margin-top: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.misscount {
+    margin-top: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .message {
     margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 30pt;
     height: 50px;
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
 }
 
 .board {
