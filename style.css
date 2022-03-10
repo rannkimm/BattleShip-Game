@@ -45,6 +45,7 @@ h2 {
 }
 
 .destroyer {    
+    margin-top: 30px;
     animation-name: slide-from-right;
     animation-duration: 3s;
     animation-iteration-count: infinite;
