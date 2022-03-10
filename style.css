@@ -44,7 +44,7 @@ h2 {
     text-shadow: 1px 1px 2px white;
 }
 
-.destroyer {    
+.ship1 {    
     margin-top: 30px;
     animation-name: slide-from-right;
     animation-duration: 3s;
@@ -153,6 +153,10 @@ h2 {
     text-shadow: 1px 1px 2px white;
 }
 
+.container {
+    display: flex;
+}
+
 .board {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -166,9 +170,57 @@ h2 {
     background-color: white;
 }
 
+.ships3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    width: 200px;
+    margin: auto;
+}
+
+.ships2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    width: 200px;
+    margin: auto;
+}
+
+.destroyer {
+    height: 100px;
+    width: 200px;
+}
+
+.submarine {
+    height: 100px;
+    width: 200px;
+}
+
+.cruiser {
+    height: 100px;
+    width: 200px;
+}
+
+.battleship {
+    height: 100px;
+    width: 200px;
+}
+
+.carrier {
+    height: 100px;
+    width: 200px;
+}
+
 .cell {
     border: 2px solid darkgrey;
     font-size: 23pt;
+}
+
+.shiptext {
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
 }
 
 div.cell:hover {
