@@ -114,7 +114,6 @@ const init = () => {
   cCounter = 0
   bCounter = 0
   aCounter = 0
-
  document.querySelector(".message").innerHTML = "";
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].dataset.cell = 'sq'
@@ -152,6 +151,8 @@ const shotIndicator = (e) => {
     console.log("d", dCounter);
     if (dCounter === 2) {
       document.querySelector(".message").innerHTML = "You sunk the DESTROYER!";
+    } else {
+        document.querySelector(".message").innerHTML = "";
     }
     winCondition();
   } else if (e.target.dataset.cell === "s") {
@@ -163,6 +164,8 @@ const shotIndicator = (e) => {
     console.log("s", sCounter);
     if (sCounter === 3) {
       document.querySelector(".message").innerHTML = "You sunk the SUBMARINE!";
+    } else {
+        document.querySelector(".message").innerHTML = "";
     }
     winCondition();
   } else if (e.target.dataset.cell === "c") {
@@ -174,6 +177,8 @@ const shotIndicator = (e) => {
     console.log("c", cCounter);
     if (cCounter === 4) {
       document.querySelector(".message").innerHTML = "You sunk the CRUISER!";
+    } else {
+        document.querySelector(".message").innerHTML = "";
     }
     winCondition();
   } else if (e.target.dataset.cell === "b") {
@@ -185,6 +190,8 @@ const shotIndicator = (e) => {
     console.log("b", bCounter);
     if (bCounter === 5) {
       document.querySelector(".message").innerHTML = "You sunk the BATTLESHIP!";
+    } else {
+        document.querySelector(".message").innerHTML = "";
     }
     winCondition();
   } else if (e.target.dataset.cell === "a") {
@@ -196,6 +203,8 @@ const shotIndicator = (e) => {
     console.log("a", aCounter);
     if (aCounter === 6) {
       document.querySelector(".message").innerHTML = "You sunk the CARRIER!";
+    } else {
+        document.querySelector(".message").innerHTML = "";
     }
     winCondition();
   } else {
