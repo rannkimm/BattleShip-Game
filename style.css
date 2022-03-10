@@ -172,7 +172,7 @@ h2 {
 }
 
 div.cell:hover {
-    background: grey;
+    background-color: rgb(142, 164, 171);
 }
 
 .buttonSection {

@@ -77,7 +77,7 @@ let randomBoards = () => {
     boxes[49].dataset.cell = "a";
     boxes[60].dataset.cell = "a";
     boxes[71].dataset.cell = "a";
-    boxes[83].dataset.cell = "a";
+    boxes[82].dataset.cell = "a";
   } else if (boardNumber === 3) {
     boxes[62].dataset.cell = "d";
     boxes[63].dataset.cell = "d";
