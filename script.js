@@ -129,6 +129,21 @@ const init = () => {
   cCounter = 0
   bCounter = 0
   aCounter = 0
+  dimage.style.opacity = '1'
+  dtext.style.opacity = '1'
+  dbox.style.borderColor = 'black'
+  simage.style.opacity = '1'
+  stext.style.opacity = '1'
+  sbox.style.borderColor = 'black'
+  cimage.style.opacity = '1'
+  ctext.style.opacity = '1'
+  cbox.style.borderColor = 'black'
+  bimage.style.opacity = '1'
+  btext.style.opacity = '1'
+  bbox.style.borderColor = 'black'
+  aimage.style.opacity = '1'
+  atext.style.opacity = '1'
+  abox.style.borderColor = 'black'
  document.querySelector(".message").innerHTML = "";
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].dataset.cell = 'sq'
@@ -166,6 +181,9 @@ const shotIndicator = (e) => {
     console.log("d", dCounter);
     if (dCounter === 2) {
       document.querySelector(".message").innerHTML = "You sunk the DESTROYER!";
+      dimage.style.opacity = '0'
+      dtext.style.opacity = '0'
+      dbox.style.borderColor = 'red'
     } else {
         document.querySelector(".message").innerHTML = "";
     }
@@ -179,6 +197,9 @@ const shotIndicator = (e) => {
     console.log("s", sCounter);
     if (sCounter === 3) {
       document.querySelector(".message").innerHTML = "You sunk the SUBMARINE!";
+      simage.style.opacity = '0'
+      stext.style.opacity = '0'
+      sbox.style.borderColor = 'red'
     } else {
         document.querySelector(".message").innerHTML = "";
     }
@@ -192,6 +213,9 @@ const shotIndicator = (e) => {
     console.log("c", cCounter);
     if (cCounter === 4) {
       document.querySelector(".message").innerHTML = "You sunk the CRUISER!";
+      cimage.style.opacity = '0'
+      ctext.style.opacity = '0'
+      cbox.style.borderColor = 'red'
     } else {
         document.querySelector(".message").innerHTML = "";
     }
@@ -205,6 +229,9 @@ const shotIndicator = (e) => {
     console.log("b", bCounter);
     if (bCounter === 5) {
       document.querySelector(".message").innerHTML = "You sunk the BATTLESHIP!";
+      bimage.style.opacity = '0'
+      btext.style.opacity = '0'
+      bbox.style.borderColor = 'red'
     } else {
         document.querySelector(".message").innerHTML = "";
     }
@@ -218,6 +245,9 @@ const shotIndicator = (e) => {
     console.log("a", aCounter);
     if (aCounter === 6) {
       document.querySelector(".message").innerHTML = "You sunk the CARRIER!";
+      aimage.style.opacity = '0'
+      atext.style.opacity = '0'
+      abox.style.borderColor = 'red'
     } else {
         document.querySelector(".message").innerHTML = "";
     }
