@@ -188,6 +188,12 @@ h2 {
     margin: auto;
 }
 
+.shipbox {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 220px;
+}
+
 .destroyer {
     height: 100px;
     width: 200px;
