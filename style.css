@@ -27,7 +27,7 @@ h1 {
 h2 {
     font-family: 'Black Ops One', cursive;
     font-size: 70pt;
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 2px 2px 2px white;
     margin: 5px;
 }
 
@@ -43,16 +43,22 @@ h2 {
     font-size: 30px;
     text-shadow: 1px 1px 2px white;
 }
-/* 
-.destroyer {    
-    animation-name: slide-in 0.5s forwards;
-    -moz-animation-name: slide-in 0.5s forwards;
-    animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
 
-} */
+.destroyer {    
+    animation-name: slide-from-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes slide-from-right {
+    from {
+        right: 100%;
+    }
+    to {
+        right: -50%;
+    }
+}
 
 .landButton {
     background-color: black;
@@ -156,11 +162,16 @@ h2 {
     width: 500px;
     margin: auto;
     border: 5px solid black;
+    background-color: white;
 }
 
 .cell {
     border: 2px solid darkgrey;
-    font-size: 23pt;;
+    font-size: 23pt;
+}
+
+div.cell:hover {
+    background: grey;
 }
 
 .buttonSection {
