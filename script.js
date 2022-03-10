@@ -21,6 +21,16 @@ let aCounter = 0
 // let notAHit = document.querySelector('.message').innerHTML = 'You MISSED! Try Again!'
 
 
+        //     boxes[i].addEventListener('mouseenter', ()=> {
+        //         boxes[i].innerHTML = 'x'
+        //     })
+        //     boxes[i].addEventListener('mouseleave', ()=> {
+        //         boxes[i].innerHTML = ''
+        //     })
+        // }
+
+// init function to reset game ==> put inside game function //
+
 const init = () => {
     hitCount.innerHTML = '0'
     missCount.innerHTML = '0'
@@ -37,6 +47,8 @@ const init = () => {
     }
 }
 
+// win condition function //
+
 const winCondition = () => {
     if (hitCount.innerHTML === '20') {
         let winPrompt = prompt('You Win! Play again? Y/N')
@@ -51,7 +63,7 @@ const winCondition = () => {
     }
 } 
 
-
+// shot indicator function to put inside event listener in the game function //
 
 const shotIndicator = (e) => {
     if (e.target.dataset.cell === 'd') {
@@ -118,15 +130,14 @@ const shotIndicator = (e) => {
     }
 }
 
-
+// restart button event listener //
 
 restart.addEventListener('click', () => {
     console.log('i called restart')
     startGame()
 })
 
-
-
+// game function //
 
 startGame = () => {
     init()
