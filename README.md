@@ -19,7 +19,7 @@
 #### Hover $~$<img src='cursor.png' width='10' height='15'> over the grid and click on a cell. If it is a hit, the cell will turn <img src='hitimage.png' width='15' height='15'>. If it is a miss, the cell will turn <img src='missimage.png' width='15' height='15'>. The image and text of the ships will disappear when you sink a ship! 
 <br />
 
-##### Click [here](rans-battleship.surge.sh) to play!
+##### Click [here](https://rans-battleship.surge.sh) to play!
 
 ****
 ### Coming soon...
@@ -30,5 +30,5 @@
 ****
 
 ### Links
-[Trello](https://trello.com/invite/b/R6LhyJVK/13aae373d8fd00518ba836b830c37322/battleship)  | [Battleship](rans-battleship.surge.sh) | [Game Repository](https://github.com/rannkimm/BattleShip-Game)
+[Trello](https://trello.com/invite/b/R6LhyJVK/13aae373d8fd00518ba836b830c37322/battleship)  | [Battleship](https://rans-battleship.surge.sh) | [Game Repository](https://github.com/rannkimm/BattleShip-Game)
 ****
