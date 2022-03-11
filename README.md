@@ -1,4 +1,4 @@
-# <span style="font-family:Black Ops One; font-size:40pt; text-shadow: 3px 3px 6px gray">**WELCOME TO BATTLESHIP**</span>
+# <center><span style="font-family:Black Ops One; font-size:40pt; text-shadow: 3px 3px 6px gray">**WELCOME TO BATTLESHIP**</span></center>
 ## Date 03-06-21
 ## By: Ran Kim
 ****
@@ -11,7 +11,7 @@
 - git add . / git commit -m " " &rarr; all changes you make
 ****
 ### Technologies Used
-![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)$~~~~~$![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)$~~~~~$![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)$~~~~~$![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+# ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) | ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)| ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
    
 ****
 ### How To Play
@@ -30,5 +30,5 @@
 ****
 
 ### Links
-[Trello](https://trello.com/invite/b/R6LhyJVK/13aae373d8fd00518ba836b830c37322/battleship)$~~~~~~~~$[Battleship](rans-battleship.surge.sh)$~~~~~~~~$[Game Repository](https://github.com/rannkimm/BattleShip-Game)
+[Trello](https://trello.com/invite/b/R6LhyJVK/13aae373d8fd00518ba836b830c37322/battleship)  | [Battleship](rans-battleship.surge.sh) | [Game Repository](https://github.com/rannkimm/BattleShip-Game)
 ****
