@@ -52,8 +52,8 @@ let randomBoards = () => {
     boxes[74].dataset.cell = "a";
     boxes[75].dataset.cell = "a";
   } else if (boardNumber === 1) {
-    boxes[103].dataset.cell = "d";
-    boxes[114].dataset.cell = "d";
+    boxes[102].dataset.cell = "d";
+    boxes[113].dataset.cell = "d";
     boxes[34].dataset.cell = "s";
     boxes[45].dataset.cell = "s";
     boxes[56].dataset.cell = "s";
@@ -61,11 +61,11 @@ let randomBoards = () => {
     boxes[6].dataset.cell = "c";
     boxes[7].dataset.cell = "c";
     boxes[8].dataset.cell = "c";
-    boxes[49].dataset.cell = "b";
     boxes[60].dataset.cell = "b";
     boxes[71].dataset.cell = "b";
     boxes[82].dataset.cell = "b";
     boxes[93].dataset.cell = "b";
+    boxes[104].dataset.cell = "b";
     boxes[38].dataset.cell = "a";
     boxes[39].dataset.cell = "a";
     boxes[40].dataset.cell = "a";
@@ -275,7 +275,6 @@ startGame = () => {
   init();
   randomBoards();
   for (let i = 0; i < boxes.length; i++) {
-    //   console.log(boxes[i].dataset.cell)
     boxes[i].addEventListener("click", shotIndicator, { once: true });
 
   }

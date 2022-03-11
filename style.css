@@ -265,3 +265,58 @@ div.cell:hover {
     font-size: 20px;
     margin: 5px 5px;
 }
+
+.winlose {
+    z-index: 1000;
+    height: 400px;
+    width: 600px;
+    border: 6px solid black;
+    background-color: rgb(67, 81, 89);
+    position: fixed;
+    top: 30%;
+    bottom: 50%;
+    left: 30%;
+    right: 50%;
+}
+
+.wlmessage {
+    font-family: 'Black Ops One', cursive;
+    font-weight: bolder;
+    font-size: 70pt;
+    text-shadow: 2px 2px 6px white;
+    margin-bottom: 30px;
+}
+
+.playagain {
+    /* opacity: ; */
+    font-family: 'Black Ops One', cursive;
+    font-weight: bolder;
+    font-size: 30pt;
+    text-shadow: 2px 2px 6px white;
+    margin-bottom: 30px;
+}
+
+.yes {
+    /* opacity: ; */
+    height: 60px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 30px;
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(138, 154, 167);    
+    text-shadow: 2px 3px 4px black;
+}
+
+.no {
+    height: 60px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 30px;
+    font-family: 'Graduate', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(138, 154, 167);
+    text-shadow: 2px 3px 4px black;
+}
