@@ -240,6 +240,7 @@ h3 {
 .shiptext {
     font-family: 'Graduate', cursive;
     font-weight: bolder;
+    text-shadow: 1px 1px 6px white;
 }
 
 div.cell:hover {
@@ -301,7 +302,6 @@ div.cell:hover {
 }
 
 .playagain {
-    /* opacity: ; */
     font-family: 'Black Ops One', cursive;
     font-weight: bolder;
     font-size: 30pt;
@@ -310,7 +310,6 @@ div.cell:hover {
 }
 
 .yes {
-    /* opacity: ; */
     height: 60px;
     width: 200px;
     margin-right: 10px;
