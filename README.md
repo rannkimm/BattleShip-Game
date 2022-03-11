@@ -23,10 +23,11 @@
 
 ****
 ### Coming soon...
+- [ ] sound effect
+- [ ] scoreboard of how many time you win
+- [ ] randomize placement of ships
+- [ ] 2 player option
 
-- sound effects
-- scorboard of how many times you win
-- 2 player option
 ****
 
 ### Links
