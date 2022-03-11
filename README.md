@@ -1,4 +1,4 @@
-# <span style="font-family:Black Ops One; font-size:40pt; text-shadow: 3px 3px 6px gray"><center>**WELCOME TO BATTLESHIP**</center></span>
+# <span style="font-family:Black Ops One; font-size:40pt; text-shadow: 3px 3px 6px gray">**WELCOME TO BATTLESHIP**</span>
 ## Date 03-06-21
 ## By: Ran Kim
 ****
