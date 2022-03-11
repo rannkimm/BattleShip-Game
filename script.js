@@ -20,6 +20,11 @@ let sbox = document.querySelector('.sbox')
 let cbox = document.querySelector('.cbox')
 let bbox = document.querySelector('.bbox')
 let abox = document.querySelector('.abox')
+let modal = document.querySelector('.winlose')
+let wlmessage = document.querySelector('.wlmessage')
+let playagain = document.querySelector('.playagain')
+let yes = document.querySelector('.yes')
+let no = document.querySelector('.no')
 let dCounter = 0
 let sCounter = 0
 let cCounter = 0
@@ -144,27 +149,35 @@ const init = () => {
   aimage.style.opacity = '1'
   atext.style.opacity = '1'
   abox.style.borderColor = 'black'
- document.querySelector(".message").innerHTML = "";
+  document.querySelector(".message").innerHTML = "";
+  modal.style.display = 'none'
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].dataset.cell = 'sq'
     boxes[i].style.backgroundColor = "";
     boxes[i].innerHTML = "";
+    boxes[i].classList.remove('disable')
     console.log(boxes[i].dataset.cell)
   }
 };
 
 // win condition function //
 
+yes.addEventListener('click', ()=> {
+    startGame()
+})
+
 const winCondition = () => {
   if (hitCount.innerHTML === "20") {
-    let winPrompt = prompt("You Win! Play again? Y/N");
-    if (winPrompt === "Y") {
-      startGame();
+    modal.style.display = 'block'
+    wlmessage.innerHTML = 'YOU WIN!'
+    for (let i = 0; i< boxes.length; i++) {
+        boxes[i].classList.add('disable')
     }
   } else if (shotCount.innerHTML === "0") {
-    let losePrompt = prompt("You Lose! Play again? Y/N");
-    if (losePrompt === "Y") {
-      startGame();
+    modal.style.display = 'block'
+    wlmessage.innerHTML = 'YOU LOSE'
+    for (let i = 0; i< boxes.length; i++) {
+        boxes[i].classList.add('disable')
     }
   }
 };
