@@ -32,6 +32,10 @@ let bCounter = 0
 let aCounter = 0
 
 
+//////// Sub-functions needed for game /////////
+
+
+// choose random board function ==> put inside game function AFTER init function //
 
 let randomBoards = () => {
   let boardNumber = Math.floor(Math.random() * 4)
@@ -122,7 +126,7 @@ let randomBoards = () => {
     }
 }
 
-// init function to reset game ==> put inside game function //
+// init function to reset game ==> put inside game function BEFORE randomBoards function //
 
 const init = () => {
   hitCount.innerHTML = '0'
@@ -158,11 +162,7 @@ const init = () => {
   }
 }
 
-// win condition function //
-
-yes.addEventListener('click', ()=> {
-    startGame()
-})
+// win condition function ==> add after every IF that checks dataset.cell //
 
 const winCondition = () => {
   if (hitCount.innerHTML === '20') {
@@ -179,6 +179,7 @@ const winCondition = () => {
     }
   }
 }
+
 
 // shot indicator function to put inside event listener in the game function //
 
@@ -267,14 +268,19 @@ const shotIndicator = (e) => {
   }
 }
 
-// restart button event listener //
+// restart and yes button event listener that restarts the game function //
 
 restart.addEventListener('click', () => {
   startGame()
 })
 
 
-// game function //
+yes.addEventListener('click', ()=> {
+    startGame()
+})
+
+
+/////////// GAME FUNCTION ////////////
 
 startGame = () => {
   init()
@@ -284,5 +290,8 @@ startGame = () => {
 
   }
 }
+
+
+// calling game function //
 
 startGame()

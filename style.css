@@ -1,3 +1,5 @@
+/* Style Background for both HTML */
+
 .gameHTML {
     text-align: center;
     background-image: url(https://images3.alphacoders.com/282/thumb-1920-2829.jpg);
@@ -17,6 +19,8 @@
     background-position: bottom;
     background-repeat: no-repeat;
 }
+
+/* Style INDEX.HTML elements (h1 & h2 => both html files)*/
 
 h1 {
     font-family: 'Black Ops One', cursive;
@@ -56,6 +60,8 @@ h3 {
     color: rgb(148, 1, 1);
 }
 
+/* INDEX.HTML - SHIP ANIMATION */
+
 .ship1 {    
     margin-top: 30px;
     animation-name: slide-from-right;
@@ -73,6 +79,8 @@ h3 {
     }
 }
 
+/* INDEX.HTML - BUTTON */
+
 .landButton {
     background-color: black;
     color: rgb(187, 187, 235);
@@ -84,6 +92,8 @@ h3 {
     font-size: 30px;
     text-shadow: 2px 2px 4px white;
 }
+
+/* Style GAME.HTML Elements*/
 
 .track {
     display: flex;
@@ -183,6 +193,8 @@ h3 {
     background-color: white;
 }
 
+/* Style ships next to board in GAME.HTML */
+
 .ships3 {
     display: flex;
     flex-direction: column;
@@ -243,9 +255,13 @@ h3 {
     text-shadow: 1px 1px 6px white;
 }
 
+/* change color when mouse hovers over cell */
+
 div.cell:hover {
     background-color: rgb(142, 164, 171);
 }
+
+/* Style GAME.HTML buttons */
 
 .buttonSection {
     margin-top: 5px;
@@ -280,6 +296,8 @@ div.cell:hover {
     margin: 5px 5px;
 }
 
+/* Style Modal */
+
 .winlose {
     z-index: 1000;
     height: 400px;
@@ -309,6 +327,8 @@ div.cell:hover {
     margin-bottom: 30px;
 }
 
+/* Style Modal Buttons */
+
 .yes {
     height: 60px;
     width: 200px;
@@ -332,6 +352,8 @@ div.cell:hover {
     color: rgb(138, 154, 167);
     text-shadow: 2px 3px 4px black;
 }
+
+/* CLASS to be added in js to boxes[i] to disable event listener */
 
 .disable {
     pointer-events: none;
