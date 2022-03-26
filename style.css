@@ -68,6 +68,7 @@ h3 {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     position: absolute;
+    overflow-x: hidden;
 }
 
 @keyframes slide-from-right {
